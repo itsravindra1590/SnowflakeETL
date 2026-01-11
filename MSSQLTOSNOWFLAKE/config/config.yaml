@@ -1,0 +1,22 @@
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  database: "pdb" 
+  username: "ravi"
+  password: "Mysql@1590"
+
+snowflake:
+  account: "OAQBWRB-JH07158" 
+  username: "RAVISNOWFLAKE"
+  password: "R@vindra@151290"
+  authenticator: "externalbrowser"
+  warehouse: "COMPUTE_WH"
+  database: "etlsnowflakeadventure"
+  schema: "bronze"
+  role: "ACCOUNTADMIN"
+  stage: "etl_order"
+  file_format: "my_csv_format"
+
+tables:
+  - source_table: "orders_stg"
+    target_table: "order_stg"
